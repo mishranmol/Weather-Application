@@ -1,0 +1,237 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif,'Meriweather Sans';
+}
+
+.wrapper{
+    gap:5rem;
+    width:100%;
+    height:100%;
+    color:#DBE2EF;
+    background-image: linear-gradient(#112d4e 0% , #3f72af 100%);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top:10px;
+}
+
+.tab-container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    max-width: 550px;
+    width: 90%;
+    margin-left: 28rem;
+    margin-top: 5rem;
+}
+.tab.current-tab{
+ background-color: rgba(219,226,239,0.5);
+ border-radius: 5px;
+ cursor: pointer;
+ letter-spacing: 1.75px;
+ padding: 5px 8px;
+}
+
+.btn{
+    background-color:#3F72AF; 
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 5px 20px;
+    color: #F9F7F7;
+    border: none;
+    padding-top: 0.40rem;
+    margin-bottom: 10px;
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* to hide the .grant-location-container */
+ /* /* .grant-location-container{
+    display:none;  
+} */
+
+.grant-location-container.active{
+    display: flex;
+ }  
+
+ .grant-location-container img{
+    margin-bottom: 2rem;
+ }
+
+ .grant{
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+ }
+
+ .allow{
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.75px;
+ }
+
+
+ .loading-container{
+    display: none;
+ }
+
+ .loading-container.active{
+    display: flex;
+ }
+
+ .load{
+    text-transform: uppercase;
+    text-align: center;
+ }
+
+  .user-info-container{
+    /* display: none; */
+ } 
+
+ .user-info-container.active{
+    display: flex;
+ }
+
+ .name{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap:0 0.5rem;
+    margin-bottom: 1rem;
+ }
+
+ .name p{
+    font-size: 2rem;
+ }
+
+ .name img{
+    width: 30px;
+    height: 30px;
+ }
+
+ .user-info-container p{ 
+      font-size:1.5rem ;
+      font-weight:200 ;
+ }
+
+ .weather-logo{
+    width: 90px;
+    height: 90px;
+    margin-top: 2rem;
+ }
+
+ .sub-container p[data-temp]{
+    font-size: 2.75rem ;
+    font-weight: 700;
+ }
+
+ .boxes{
+    display: flex;
+    gap:10px 20px;
+    justify-content:center;
+    align-items: center;
+    margin-top: 4rem;
+ }
+
+.parameter{
+    height: 30%;
+    width: 30%;
+    max-width: 200px;
+    background-color: rgba(219,226,239,0.5);
+    border-radius:5px ;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap:5px 0;
+    flex-direction: column;
+}
+
+.parameter img{
+ width: 50px;
+ height: 50px;
+}
+
+.info{
+ text-transform: uppercase;
+ font: 1.15rem;
+ font-weight: 600;
+}
+
+.value{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.windspeed{
+   font-size: 1rem;
+}
+
+.form-container{
+    /* display: none; */
+    width: 90%;
+    max-width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 0 10px;
+    margin-bottom: 3rem;
+}
+
+.form-container.active{
+    display: flex;
+}
+
+.form-container input{
+    all: unset;
+    width: calc(100% - 80px);
+    height: 40px;
+    padding:0 20px;
+    background-color: rgba(219,226,239,0.5);
+    border-radius: 10px;
+    border: none;
+}
+
+
+.form-container input::placeholder{
+    color: rgba(255,255,255,0.7);
+}
+
+.form-container input:focus{
+outline: 2px solid rgba(255,255,255,0.7); 
+}
+
+
+.form-container button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    padding-top: 35px;
+    margin-top: 0.5rem;
+}
+
+
+.weather-container{
+    padding-bottom: 10rem;
+    
+}
